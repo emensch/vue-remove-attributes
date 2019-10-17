@@ -1,0 +1,25 @@
+{
+  "name": "vue-remove-attributes",
+  "version": "1.0.0",
+  "description": "A vue-template-compiler module that strips out unwanted HTML attributes.",
+  "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emensch/vue-remove-attributes.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emensch/vue-remove-attributes/issues"
+  },
+  "homepage": "https://github.com/emensch/vue-remove-attributes#readme",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "typescript": "^3.6.4"
+  }
+}
