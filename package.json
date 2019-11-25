@@ -1,12 +1,16 @@
 {
   "name": "vue-remove-attributes",
   "version": "1.0.0",
-  "description": "A vue-template-compiler module that strips out unwanted HTML attributes.",
+  "description": "A vue-template-compiler module that removes unwanted attributes from templates.",
   "main": "./lib/main.js",
   "types": "./lib/main.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && npm run build:js && npm run build:types",
+    "build:js": "babel src --out-dir lib --extensions \".ts\"",
+    "build:types": "tsc",
+    "test": "jest --env node",
+    "test:dev": "jest --env node --watch",
+    "clean": "rm -rf lib"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,22 @@
   },
   "homepage": "https://github.com/emensch/vue-remove-attributes#readme",
   "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.7.4",
+    "@testing-library/jest-dom": "^4.2.3",
+    "@types/jest": "^24.0.19",
+    "@types/memory-fs": "^0.3.2",
+    "@types/webpack": "^4.39.5",
+    "babel-jest": "^24.9.0",
     "jest": "^24.9.0",
-    "typescript": "^3.6.4"
+    "jsdom": "^15.2.0",
+    "memory-fs": "^0.5.0",
+    "typescript": "^3.6.4",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2"
   }
 }
