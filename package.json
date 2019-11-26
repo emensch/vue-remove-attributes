@@ -2,21 +2,34 @@
   "name": "vue-remove-attributes",
   "version": "1.0.0",
   "description": "A vue-template-compiler module that removes unwanted attributes from templates.",
-  "main": "./lib/main.js",
-  "types": "./lib/main.d.ts",
+  "files": ["lib"],
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
   "scripts": {
     "build": "npm run clean && npm run build:js && npm run build:types",
     "build:js": "babel src --out-dir lib --extensions \".ts\"",
     "build:types": "tsc",
     "test": "jest --env node",
     "test:dev": "jest --env node --watch",
-    "clean": "rm -rf lib"
+    "clean": "rm -rf lib",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emensch/vue-remove-attributes.git"
   },
-  "author": "",
+  "keywords": [
+    "vue",
+    "template",
+    "compiler",
+    "webpack",
+    "module",
+    "HTML",
+    "attribute",
+    "remove",
+    "test"
+  ],
+  "author": "Eli Mensch <eli.mensch@gmail.com> (https://elimensch.dev/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/emensch/vue-remove-attributes/issues"
