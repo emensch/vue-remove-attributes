@@ -1,5 +1,8 @@
 
 # vue-remove-attributes
+[![CircleCI](https://circleci.com/gh/emensch/vue-remove-attributes.svg?style=svg)](https://circleci.com/gh/emensch/vue-remove-attributes)
+[![NPM](https://img.shields.io/npm/v/vue-remove-attributes)](https://www.npmjs.com/package/vue-remove-attributes)
+
 A [`vue-template-compiler`](https://github.com/vuejs/vue/tree/dev/packages/vue-template-compiler) module that removes unwanted attributes from templates. Neat!
 
 
