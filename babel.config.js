@@ -11,4 +11,5 @@ module.exports = {
     '@babel/typescript'
   ],
   comments: false,
+  plugins: ['add-module-exports'],
 };
