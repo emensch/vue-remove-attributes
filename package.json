@@ -1,6 +1,6 @@
 {
   "name": "vue-remove-attributes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A vue-template-compiler module that removes unwanted attributes from templates.",
   "files": [
     "lib"
