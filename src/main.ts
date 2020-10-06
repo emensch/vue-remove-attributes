@@ -1,18 +1,4 @@
-/*
-  Subset of (simplified) AST types converted from: 
-  https://github.com/vuejs/vue/blob/dev/flow/compiler.js
-*/
-interface ASTAttr {
-  name: string;
-  value: any;
-  [key: string]: any;
-}
-
-interface ASTElement {
-  attrsList: Array<ASTAttr>;
-  attrsMap: { [key: string]: any };
-  [key: string]: any;
-}
+import { ASTElement } from "vue-template-compiler";
 
 export type MatcherType = string | string[] | RegExp;
 
